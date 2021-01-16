@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+body
+{
+background-color:black;
+
+}
+div
+{
+width:100px;
+height:100px;
+background-color:blue;
+border:5px double white; 
+position:absolute;
+-webkit-animation:mymove 5s infinite;
+animation:mymove 5s infinite;
+
+}
+@-webkit-keyframes mymove
+{
+0%{top:0px;left:0px;background-color:blue;transform:rotate(360deg);
+
+}
+25%{top:0px;left:500px;background-color:orange;transform:scale(2);
+}
+50%{top:400px;left:500px;background-color:green;border-radius:100px;
+    }
+75%{top:400px;left:0px;background-color:purple;transform:rotate(-360deg);
+    }
+100%{top:0px;left:0px;background-color:blue;
+    }
+
+}
+
+@keyframes mymove
+{
+    0%{top:0px;left:0px;background-color:blue;transform:rotate(360deg);
+
+}
+25%{top:0px;left:500px;background-color:orange;transform:scale(2);
+    }
+50%{top:400px;left:500px;background-color:green;border-radius:100px;
+    }
+75%{top:400px;left:0px;background-color:purple;transform:rotate(-360deg);
+    }
+100%{top:0px;left:0px;background-color:blue;
+    }
+
+}
+
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
